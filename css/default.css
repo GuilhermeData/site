@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../google-fonts/Montserrat/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url(../google-fonts/Kalam/Kalam-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url(../google-fonts/Caveat/Caveat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url(../google-fonts/Courgette/Courgette-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amatic SC';
+    src: url(../google-fonts/Amatic_SC/AmaticSC-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.kalamed {
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    background-color: #444;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #BBB !important;
+}
+
+.ajustado-esquerda {
+    display: inline-block;
+}
+
+.dash {
+   border: 2px dashed #F00; 
+}
+
+/* Remove todo o background e os contornos*/
+.navbar-default {
+    background: none;
+    border: none;
+    box-shadow: none !important;
+    border-radius: 0px;
+}
+
+.navbar-default a {
+    cursor: pointer;
+    
+    /* Estilo do titulo */
+    font-weight: bold;
+    color: #BBB !important;
+    text-shadow: 2px 2px 0px rgb(0,0,0, 0.25) !important;
+    /* --- */
+    
+    padding: 20px !important;
+    border-bottom: 15px solid rgba(0,0,0,0);
+    
+    transition: all 0.3s ease-in 0s;
+}
+
+.navbar-default a:hover {
+    color: #FFF !important;
+
+}
+
+.navbar-default li.active a {
+    background: none !important;
+}
+
+.navbar-default li.active a {
+    color: #444 !important;
+    text-shadow: none !important;
+    background-color: #BBB !important;
+    border-bottom: 15px solid #666;
+}
+
+.showOnMobile, .section-container {
+    display: none;
+}
+
+.apresentacao {
+    font-size: 18px;
+}
+
+.alinhado-esquerda {
+    text-align: left;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 36px;
+    text-shadow: 2px 2px 0px rgb(0,0,0, 0.25) !important;
+}
+
+.sub-titulo {
+    font-weight: bold;
+    font-size: 26px;
+    text-shadow: 2px 2px 0px rgb(0,0,0, 0.25) !important;
+}
+
+.golden1 {
+  font-weight: bold;
+  /*background-color: #e5bb52;  25% mais claro que o de baixo*/
+  background-color: #daa520;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(250,250,250,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.container-dos-icones-fea {
+    display: table;
+    max-width: 210px;
+    width: 210px;
+}
+
+.container-apresentacao {
+    /* os canvas já têm isso no html */
+    max-width: 320px;
+    width: 320px;
+    max-height: 430px;
+    height: 430px;
+    /* /. os canvas já têm isso no html */
+    
+    margin: auto;
+    
+    position: relative;
+}
+
+#tip {
+    display: table;
+    text-align: center;
+    width: 60px;
+    padding: 3px;
+    border-radius: 3px;
+    float: left;
+    font-size: 9px;
+    color: white;
+    position: absolute;
+    bottom: -30px;
+    left: -11px;
+    background-color: black;
+}
+
+#tip-triangle {
+    position: absolute;
+    top: -10px;
+    left: 23px;
+    width: 10px;
+    height: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+
+#container-porta1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+    height: 700px;
+    z-index: 22;
+}
+
+#container-porta2 {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+    height: 700px;
+    z-index: 22;
+}
+
+.porta {
+    top: 3px;
+    z-index: 20;
+    width: 160px;
+    height: 594px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    background-image: url(../img/ai4.jpg);
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.borda {
+    position: absolute;
+    z-index: 20;
+    background-color: #d6b158;    
+    box-shadow: 5px 5px 15px #000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 600px;
+    border: 1px solid #000;
+}
+
+#porta1 {
+    left: 0;
+    border-left: 1px solid #333;
+}
+#porta2 {
+    left: 20px;
+    border-right: 1px solid #333;
+}
+
+#borda1 {
+    left: 160px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+
+#borda2 {
+    left: 0;
+    border-radius: 0px 4px 4px 0px;
+}
+
+pre {
+    overflow: auto;
+    max-height: 500px;
+}
+
+#container-secreto {
+    /* os canvas já têm isso no html */
+    max-width: 360px;
+    width: 360px;
+    max-height: 510px;
+    height: 0px;
+    /* /. os canvas já têm isso no html */
+    
+    padding: 0px;
+    
+    opacity: 0;
+    
+    position: relative;
+    
+    overflow: hidden;
+    
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+.tag-produto {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.tag-conhecimento {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 26px !important;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin: 15px auto auto auto;
+    float: right;
+    background-image: url(../img/guilhermedata.jpg);
+    box-shadow: 0px 0px 5px #333;
+    background-size:  120%;
+}
+
+.container-apresentacao canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+#code-container {
+    display: table; 
+    position: relative;
+    font-family: 'Audiowide', cursive;
+    margin: 20px auto;
+}
+
+#code {
+    font-family: 'Audiowide', cursive;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    color: #009;
+    font-size: 18px;
+    display: none;
+    border-radius: 16px;
+    padding: 0px 10px 20px 10px;
+    text-shadow: 1px 1px 1px #FFF;
+    background-image: url(../img/code.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#anch-heart {
+    background-image: url(../img/heart_blanck2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+#anch-heart:hover {
+    background-image: url(../img/heart_hover.png);
+    
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+#anch-robots {
+    background-image: url(../img/robot.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+#anch-robots.active {
+    background-image: url(../img/robot_hover.png);
+    
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+.anch {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+
+footer {
+    min-height: 100px;
+}
